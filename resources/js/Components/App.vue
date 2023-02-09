@@ -70,17 +70,13 @@ export default {
         this.changeSet()
     },
     methods: {
-        getSVG(path) {
-            let svg = ''
-            axios.get('assets/pimcoreadmin/'+path)
-                .then(response => {
-                    svg = response.data
-                })
-            return svg;
-        },
         changeSet() {
             localStorage.set = this.selectedSet
-            axios.get('data/sets/'+this.selectedSet+'.json')
+            let path = window.location.pathname
+            if (!path.endsWith('/')) {
+                path = path + '/'
+            }
+            axios.get(path+'data/sets/'+this.selectedSet+'.json')
                 .then(response => {
                     this.icons = response.data
                 })

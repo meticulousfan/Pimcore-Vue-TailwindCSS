@@ -16,7 +16,7 @@ mix
     .js('resources/js/app.js', 'docs/js/app.js')
     .vue({
         extractStyles: true,
-        globalStyles: true,
+        globalStyles: false,
     })
     .setPublicPath('docs')
     .sass('resources/scss/app.scss', 'css')

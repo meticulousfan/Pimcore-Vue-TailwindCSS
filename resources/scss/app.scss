@@ -1,0 +1,31 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+    @apply antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900;
+}
+
+nav {
+    @apply p-4 flex justify-between;
+    @apply text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200;
+
+    button, a {
+        @apply ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300;
+    }
+}
+
+.icon {
+    @apply max-w-[1.5rem] max-h-[1.5rem];
+}
+
+.space-x-4 > :first-child {
+    @apply ml-4;
+}
+.space-y-4 > :first-child {
+    @apply mt-4;
+}
+
+@import "./../../node_modules/vue-toastification/dist/index.css";

@@ -1,6 +1,6 @@
 <?php
 
-namespace NormanHuth\ConsoleApp;
+namespace NormanHuth\PimcoreIconSheet;
 
 use Exception;
 use Illuminate\Container\Container;

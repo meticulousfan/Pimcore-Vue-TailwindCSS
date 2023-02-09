@@ -1,17 +1,10 @@
-# Console App Template
+# Pimcore Icon Sheet
 
-Creating Console Applications with [Laravel Console Commands](https://laravel.com/docs/artisan) based on [Symfony Console Commands](https://symfony.com/doc/current/console.html).
+Based on Pimcore [pimcore/pimcore](https://github.com/pimcore/pimcore) v10.5.16.  
+
+[Open Icon Sheet](https://muetze42.github.io/pimcore-icon-sheet/)
 
 ---
-DONT FORGET TO RENAME `bin/app` TO YOUR APP COMMAND AND CHANGE IT `composer.json`:
-
-```json
-{
-    "bin": [
-        "bin/app"
-    ]
-}
-```
 
 [![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine/)
 

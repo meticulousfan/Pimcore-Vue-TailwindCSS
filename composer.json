@@ -1,10 +1,14 @@
 {
-    "name": "norman-huth/console-app-template",
+    "name": "norman-huth/pimcore-icon-sheet",
+    "description": "Icon Sheet for Pimcore",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "NormanHuth\\ConsoleApp\\": "src/"
-        }
+            "NormanHuth\\PimcoreIconSheet\\": "src/"
+        },
+        "files": [
+            "functions/helpers.php"
+        ]
     },
     "authors": [
         {
@@ -12,18 +16,13 @@
             "homepage": "https://huth.it"
         }
     ],
-    "support": {
-        "issues": "https://github.com/Muetze42/console-app-template/issues",
-        "source": "https://github.com/Muetze42/console-app-template"
-    },
     "require": {
-        "php": "^8.0",
-        "illuminate/console": "^9.0",
-        "illuminate/events": "^9.0"
+        "php": "^8.1",
+        "illuminate/console": "^10.0",
+        "illuminate/events": "^10.0",
+        "norman-huth/helpers-collection-php": "^1.0.64",
+        "sabberworm/php-css-parser": "^8.4"
     },
-    "bin": [
-        "bin/app"
-    ],
     "config": {
         "sort-packages": true
     },

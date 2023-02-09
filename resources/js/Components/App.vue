@@ -30,7 +30,7 @@
             </select>
         </div>
         <div class="flex flex-wrap justify-center space-x-4 space-y-4 mt-6">
-            <div v-for="icon in icons" class="p-2 w-80 rounded border text-center dark:bg-slate-800 dark:border-slate-600">
+            <div v-for="icon in icons" class="p-2 w-96 rounded border text-center dark:bg-slate-800 dark:border-slate-600">
                 <img :src="'assets/pimcoreadmin/'+icon" :alt="icon" class="icon mx-auto">
                 <Copy :value="'/bundles/pimcoreadmin/img/'+icon" name="Path" />
                 <div v-if="icon in css" class="mt-2 rounded border border-dashed border-amber-500/50 pb-1">

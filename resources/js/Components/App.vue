@@ -72,7 +72,7 @@ export default {
     methods: {
         getSVG(path) {
             let svg = ''
-            axios.get('/assets/pimcoreadmin/'+path)
+            axios.get('assets/pimcoreadmin/'+path)
                 .then(response => {
                     svg = response.data
                 })
@@ -80,7 +80,7 @@ export default {
         },
         changeSet() {
             localStorage.set = this.selectedSet
-            axios.get('/data/sets/'+this.selectedSet+'.json')
+            axios.get('data/sets/'+this.selectedSet+'.json')
                 .then(response => {
                     this.icons = response.data
                 })

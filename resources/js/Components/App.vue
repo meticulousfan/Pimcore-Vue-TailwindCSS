@@ -34,7 +34,7 @@
                 <img :src="'assets/pimcoreadmin/'+icon" :alt="icon" class="icon mx-auto">
                 <Copy :value="'/bundles/pimcoreadmin/img/'+icon" name="Path" />
                 <div v-if="icon in css" class="mt-2 rounded border border-dashed border-amber-500/50 pb-1">
-                    Class:
+                    <div class="text-sm">Class:</div>
                     <Copy :value="css[icon]" name="Class" />
                 </div>
             </div>
